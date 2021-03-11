@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    
+}
+li, a, button
+ {
+    font-family:sans-serif;
+     font-size: 16px;
+   text-decoration: none; 
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 5%;
+    background-color: rgb(70, 150, 182);
+}
+.logo{
+    cursor: pointer;
+    width:80px;
+}
+.nav-links{
+    list-style-type: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    text-decoration: none;
+}
+.nav-links li a:hover{
+   color:crimson;
+}
+header .cta img{
+    width:50px;
+    border-radius: 25px;
+}
+
+.dropdown ul{
+    list-style-type: none;  
+}
+.dropdown ul li{
+    
+    float: left;
+    width:200px;
+    height:50px;
+    font-size: 20px;
+    padding-left:10px;
+    color:teal;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(233, 237, 241);
+    
+}
+.dropdown ul li a{
+    
+    color:darkblue;
+    display: block;
+}
+.dropdown ul li a:hover{
+    color:crimson;
+    text-decoration: underline;
+    
+}
+.dropdown ul li ul li{
+    display: none;
+}
+.dropdown ul li:hover ul li{
+    display: block;
+    z-index: 5;
+    
+    text-decoration: none;
+}
+.dropdown ul li button{
+    border-radius: 10px;
+    padding:5px;
+    border-color: rgb(106, 106, 202);
+    color:crimson;
+}
+.sm-block{
+    float:left;
+    background-color:rgb(236, 203, 203);
+    width:18em;
+    height: 25vh;
+    color:blue;
+    margin: 20px 10px 20px 55px;
+    list-style-type: none;
+    padding:10px;
+    z-index:-1;
+    
+}
+.circle{
+    width:150px;
+    height:150px;
+    fill:none;
+    stroke:yellow;
+    stroke-width:2px;
+}
+.lap{
+float:right;
+}
+.desk{
+    float:right;
+}
+.num{
+    text-align: center;
+   padding-top:50px;
+}
+.ln-block{
+    float:left;
+    background-color:rgb(236, 203, 203);
+    width:30em;
+    height: 25vh;
+    color:blue;
+    margin: 20px 10px 20px 55px;
+    list-style: none;
+    padding:10px;   
+}
+.ln-num{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type:none ;
+    padding:20px;
+    color:rgb(28, 91, 116);
+}
+.ln-num1{
+    display: flex;
+    justify-content: space-evenly;   
+}
+.auditing{
+    
+    float:left;
+    background-color:rgb(236, 203, 203);
+    width:35em;
+    height: 55vh;
+    color:blue;
+    margin: 20px 10px 20px 55px;
+    position:relative;
+    padding:10px;
+   
+}
+.onboard{
+    float:left;
+    background-color:rgb(236, 203, 203);
+    width:35em;
+    height: 55vh;
+    padding:10px;
+    color:blue;
+    margin: 20px 10px 20px 55px;
+    list-style-type: none;
+    position: relative;
+}
+.aud-btn{
+    color: white; 
+    padding: 2px 4px; 
+    cursor: pointer; 
+
+}
+.aud-btn button:hover{
+    background-color: teal;
+}
+.drop ul{
+    list-style-type: none;  
+}
+.drop ul li{
+    
+    float:left;
+    width:130px;
+    height:50px;
+    font-size: 20px;
+    padding-left:5px;
+    color:teal;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(233, 237, 241);
+    
+}
+.drop ul li a{
+    
+    color:darkblue;
+    display: block;
+}
+.drop ul li a:hover{
+    color:crimson;
+    text-decoration: underline;
+    
+}
+.drop ul li ul li{
+    display: none;
+}
+.drop ul li:hover ul li{
+    display: block;
+    z-index: 1;
+    
+    text-decoration: none;
+}
+.drop ul li button{
+    border-radius: 10px;
+    padding:5px;
+    border-color: rgb(106, 106, 202);
+    color:crimson;
+}
+.aud-lis ul li{
+    float: left;
+    padding:15px;
+    list-style-type: square;
+    list-style-position: inside;
+
+}
+.aud-img ul li{
+    float:left;
+    padding:15px;
+}
+@media only screen and (max-width:700px) {
+    nav ul{
+        width: 100%;
+        background-color:rgb(70, 150, 182) ;
+        position: relative;
+        z-index:2;
+    }
+    .dropdown ul{
+        width: 100%;
+        background-color:rgb(70, 150, 182) ;
+        position: absolute;;
+        z-index:2;
+   
+    }
+    .dropdown ul li {
+        display:block;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    .dropdown ul li ul li{
+        display:block;
+        margin-top:10px;
+        margin-bottom: 10px;
+        position:relative;   
+    }
+    h2{
+        position:relative;
+    }
+    .sm-block{
+        position:absolute;
+        width:980px;
+        display: block;
+        color:white;
+    }
+    .ln-block{
+        position:relative;
+        width:100%;
+    }
+
+}
